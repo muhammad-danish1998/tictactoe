@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200&family=Zen+Kurenaido&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200&family=Zen+Kurenaido&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Mulish', sans-serif;
+    font-family: 'Zen Kurenaido', sans-serif; */
+    font-family: 'Mulish', sans-serif;
+font-family: 'Zen Kurenaido', sans-serif;
+    background-color: black;
+    color: rgb(221, 213, 213);
+}
+nav{
+    background: black;
+    color: white;
+    font-weight: bold;
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+    padding: 0 12px;
+}
+nav ul{
+    list-style: none;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    /* background-color: yellow; */
+    margin-top: 40px;
+    flex-direction: column;
+    position: relative;
+
+  
+}
+.gameArea{
+    display: grid;
+    grid-template-rows: repeat(3,10vw);
+    grid-template-columns: repeat(3,10vw);
+    /* border: 2px solid red; */
+    /* background-color: yellow; */
+    padding: 0px 580px;
+    /* background-color: yellow;    */
+
+}
+.box{
+    border: 2px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 8vw;
+    cursor: pointer;
+}
+.boxText{
+    background: transparent;
+    margin-bottom: 20px;
+}
+/* .box:hover{
+    background-color:rgb(218, 212, 223)
+} */
+.info{
+    padding: 0 30px;
+    margin-top: 50px;
+    font-size: 25px;
+    font-weight: bold;
+
+}
+.imgBox img{
+    width: 0px;
+    transition: width 1s ease-in-out;
+}
+.br-0{
+    border-right: 0px;
+}
+.bl-0{
+    border-left: 0px;
+}.bt-0{
+    border-top: 0px;
+}.bb-0{
+    border-bottom: 0px;
+}
+.gameInfo{
+    /* border: 2px solid red; */
+    /* background-color: red; */
+    text-align: center;
+    margin-top: 30px;
+    /* background-color: tomato; */
+
+
+
+}
+.btn{
+    padding: 6px;
+    font-weight: bold;
+    border-radius: 5px;
+    width: 100px;
+    letter-spacing: 4px;
+    font-size: 16px;
+    background-color: white;
+    color: rgb(107, 102, 107);
+    font-family: sans-serif;
+    
+}
+.line{
+    background-color: white;
+    width: 0;
+    height: 3px;
+    position: absolute;
+    transition: width 1s ease-in-out;
+
+}
+@media screen and (max-width: 1092px) {
+    .gameArea{
+        display: grid;
+        grid-template-rows: repeat(3,13vw);
+        grid-template-columns: repeat(3,13vw);
+        padding: 0px 350px;
+        /* background-color: yellow;    */
+    }
+}
+@media screen and (max-width: 800px) {
+    .gameArea{
+        display: grid;
+        grid-template-rows: repeat(3,19vw);
+        grid-template-columns: repeat(3,19vw);
+        padding: 0px 200px;
+        /* background-color: yellow;  */
+        font-size: 34px;  
+    }
+}
+@media screen and (max-width: 500px) {
+    .gameArea{
+        display: grid;
+        grid-template-rows: repeat(3,30vw);
+        grid-template-columns: repeat(3,28vw);
+        padding: 0px 40px;
+        /* background-color: yellow;  */
+        font-size: 34px; 
+        font-size: 30px; 
+    }
+    .boxText{
+        font-size: 90px;
+    }
+    #mainHeading{
+        margin-left: 100px;
+    }
+}
